@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct MainHeaderView: View {
+    
+    @EnvironmentObject var appState: AppState
+    
     var body: some View {
         HStack{
             Button(action: {
                 withAnimation(.easeInOut){
-                    print("Info Clicked")
+                    appState.currentScreen = ScreenID.infoScreen.rawValue
                 }
             }, label: {
                 HStack{
@@ -21,19 +24,19 @@ struct MainHeaderView: View {
                         .foregroundColor(myAppAccentColor)
                         .padding(.vertical, 14)
                         .padding(.horizontal, 18)
-                        
                 }
                 .background(backgroundColor)
                 .cornerRadius(100, corners: [.topRight, .bottomRight])
                 .shadow(color: lowerShadow, radius: 10, x: 6, y: 6)
                 .shadow(color: upperShadow, radius: 10, x: -6, y: -6)
-                
-                    
             })
+            
+            
             Spacer()
+            
             Button(action: {
                 withAnimation(.easeInOut){
-                    print("Liked Clicked")
+                    appState.currentScreen = ScreenID.savedScreen.rawValue
                 }
             }, label: {
                 HStack{
@@ -48,11 +51,8 @@ struct MainHeaderView: View {
                 .shadow(color: lowerShadow, radius: 10, x: 6, y: 6)
                 .shadow(color: upperShadow, radius: 10, x: -6, y: -6)
                 
-                    
             })
         }
-        .edgesIgnoringSafeArea(.all
-        )
     }
 }
 

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EAC14F32662B1F800DCCAEB /* DevDetailsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC14F22662B1F800DCCAEB /* DevDetailsCardView.swift */; };
+		6EAC14FA2662B4AB00DCCAEB /* AppDetailsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC14F92662B4AB00DCCAEB /* AppDetailsCardView.swift */; };
+		6EAC14FE2662B67600DCCAEB /* SourceLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC14FD2662B67600DCCAEB /* SourceLinkView.swift */; };
 		6EF0D61A2660C81100AD6010 /* AnimeoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0D6192660C81100AD6010 /* AnimeoteApp.swift */; };
 		6EF0D61C2660C81100AD6010 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0D61B2660C81100AD6010 /* ContentView.swift */; };
 		6EF0D61E2660C81400AD6010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EF0D61D2660C81400AD6010 /* Assets.xcassets */; };
@@ -23,9 +26,18 @@
 		6EF0D677266239C100AD6010 /* QuoteServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0D676266239C100AD6010 /* QuoteServerModel.swift */; };
 		6EF0D67B26623A8E00AD6010 /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0D67A26623A8E00AD6010 /* DatabaseHandler.swift */; };
 		6EF0D67F26623CC900AD6010 /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0D67E26623CC900AD6010 /* QuoteViewModel.swift */; };
+		6EF0D6932662653C00AD6010 /* SavedQuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0D6922662653C00AD6010 /* SavedQuotesView.swift */; };
+		6EF0D6962662661400AD6010 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0D6952662661400AD6010 /* HeaderView.swift */; };
+		6EF0D69E26627A4900AD6010 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0D69D26627A4900AD6010 /* MainScreen.swift */; };
+		6EF0D6A326627F3400AD6010 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0D6A226627F3400AD6010 /* InfoView.swift */; };
+		6EF0D6A7266297F400AD6010 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0D6A6266297F400AD6010 /* AppState.swift */; };
+		6EF0D6AC2662AADD00AD6010 /* SavedQuoteCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0D6AB2662AADD00AD6010 /* SavedQuoteCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6EAC14F22662B1F800DCCAEB /* DevDetailsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevDetailsCardView.swift; sourceTree = "<group>"; };
+		6EAC14F92662B4AB00DCCAEB /* AppDetailsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailsCardView.swift; sourceTree = "<group>"; };
+		6EAC14FD2662B67600DCCAEB /* SourceLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLinkView.swift; sourceTree = "<group>"; };
 		6EF0D6162660C81100AD6010 /* Animeote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animeote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EF0D6192660C81100AD6010 /* AnimeoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeoteApp.swift; sourceTree = "<group>"; };
 		6EF0D61B2660C81100AD6010 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +56,12 @@
 		6EF0D676266239C100AD6010 /* QuoteServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteServerModel.swift; sourceTree = "<group>"; };
 		6EF0D67A26623A8E00AD6010 /* DatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHandler.swift; sourceTree = "<group>"; };
 		6EF0D67E26623CC900AD6010 /* QuoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewModel.swift; sourceTree = "<group>"; };
+		6EF0D6922662653C00AD6010 /* SavedQuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedQuotesView.swift; sourceTree = "<group>"; };
+		6EF0D6952662661400AD6010 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		6EF0D69D26627A4900AD6010 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		6EF0D6A226627F3400AD6010 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		6EF0D6A6266297F400AD6010 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		6EF0D6AB2662AADD00AD6010 /* SavedQuoteCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedQuoteCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +75,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EAC14F52662B43800DCCAEB /* InfoViews */ = {
+			isa = PBXGroup;
+			children = (
+				6EAC14F22662B1F800DCCAEB /* DevDetailsCardView.swift */,
+				6EAC14F92662B4AB00DCCAEB /* AppDetailsCardView.swift */,
+			);
+			path = InfoViews;
+			sourceTree = "<group>";
+		};
+		6EAC14F62662B44900DCCAEB /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				6EF0D65A2661163D00AD6010 /* QuoteCardView.swift */,
+				6EF0D66126612E4900AD6010 /* MainHeaderView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		6EAC14F72662B45700DCCAEB /* SavedQuotesViews */ = {
+			isa = PBXGroup;
+			children = (
+				6EF0D6AB2662AADD00AD6010 /* SavedQuoteCardView.swift */,
+			);
+			path = SavedQuotesViews;
+			sourceTree = "<group>";
+		};
+		6EAC14F82662B47800DCCAEB /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				6EF0D65D26611F9600AD6010 /* RoundButton.swift */,
+				6EF0D6952662661400AD6010 /* HeaderView.swift */,
+				6EAC14FD2662B67600DCCAEB /* SourceLinkView.swift */,
+			);
+			path = CommonViews;
+			sourceTree = "<group>";
+		};
 		6EF0D60D2660C81100AD6010 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +158,9 @@
 			children = (
 				6EF0D6192660C81100AD6010 /* AnimeoteApp.swift */,
 				6EF0D61B2660C81100AD6010 /* ContentView.swift */,
+				6EF0D69D26627A4900AD6010 /* MainScreen.swift */,
+				6EF0D6922662653C00AD6010 /* SavedQuotesView.swift */,
+				6EF0D6A226627F3400AD6010 /* InfoView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -119,9 +176,10 @@
 		6EF0D6302660C8AF00AD6010 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6EF0D65A2661163D00AD6010 /* QuoteCardView.swift */,
-				6EF0D65D26611F9600AD6010 /* RoundButton.swift */,
-				6EF0D66126612E4900AD6010 /* MainHeaderView.swift */,
+				6EAC14F72662B45700DCCAEB /* SavedQuotesViews */,
+				6EAC14F62662B44900DCCAEB /* MainViews */,
+				6EAC14F52662B43800DCCAEB /* InfoViews */,
+				6EAC14F82662B47800DCCAEB /* CommonViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,6 +197,7 @@
 			children = (
 				6EF0D657266110FD00AD6010 /* Constants.swift */,
 				6EF0D66526613C9000AD6010 /* Extensions.swift */,
+				6EF0D6A6266297F400AD6010 /* AppState.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -239,19 +298,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EF0D67B26623A8E00AD6010 /* DatabaseHandler.swift in Sources */,
+				6EF0D6AC2662AADD00AD6010 /* SavedQuoteCardView.swift in Sources */,
 				6EF0D65E26611F9600AD6010 /* RoundButton.swift in Sources */,
+				6EF0D6A7266297F400AD6010 /* AppState.swift in Sources */,
 				6EF0D6232660C81400AD6010 /* Persistence.swift in Sources */,
+				6EAC14FA2662B4AB00DCCAEB /* AppDetailsCardView.swift in Sources */,
 				6EF0D654266110AD00AD6010 /* BlankView.swift in Sources */,
 				6EF0D673266233F100AD6010 /* NetworkingApi.swift in Sources */,
 				6EF0D61C2660C81100AD6010 /* ContentView.swift in Sources */,
 				6EF0D677266239C100AD6010 /* QuoteServerModel.swift in Sources */,
+				6EF0D69E26627A4900AD6010 /* MainScreen.swift in Sources */,
 				6EF0D66226612E4900AD6010 /* MainHeaderView.swift in Sources */,
 				6EF0D61A2660C81100AD6010 /* AnimeoteApp.swift in Sources */,
+				6EF0D6932662653C00AD6010 /* SavedQuotesView.swift in Sources */,
 				6EF0D67F26623CC900AD6010 /* QuoteViewModel.swift in Sources */,
 				6EF0D65B2661163D00AD6010 /* QuoteCardView.swift in Sources */,
 				6EF0D6262660C81400AD6010 /* Animeote.xcdatamodeld in Sources */,
 				6EF0D66626613C9000AD6010 /* Extensions.swift in Sources */,
+				6EAC14FE2662B67600DCCAEB /* SourceLinkView.swift in Sources */,
 				6EF0D658266110FD00AD6010 /* Constants.swift in Sources */,
+				6EF0D6A326627F3400AD6010 /* InfoView.swift in Sources */,
+				6EF0D6962662661400AD6010 /* HeaderView.swift in Sources */,
+				6EAC14F32662B1F800DCCAEB /* DevDetailsCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
