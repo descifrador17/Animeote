@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H1030" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="QuoteModel" representedClassName="QuoteModel" syncable="YES">
+    <entity name="QuoteModel" representedClassName="QuoteModel" syncable="YES" codeGenerationType="class">
         <attribute name="anime" optional="YES" attributeType="String"/>
         <attribute name="character" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="quote" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="QuoteModel" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="QuoteModel" positionX="-63" positionY="-18" width="128" height="103"/>
     </elements>
 </model>

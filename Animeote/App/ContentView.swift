@@ -9,12 +9,10 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
+    @Environment(\.managedObjectContext) private var viewContextanviewContextAn
+    @EnvironmentObject var quoteViewModel: QuoteViewModel
 
-//    @FetchRequest(
-//        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-//        animation: .default)
-//    private var items: FetchedResults<Item>
+    @FetchRequest(entity: QuoteModel.entity(), sortDescriptors:[]) private var items: FetchedResults<QuoteModel>
 
     var body: some View {
         ZStack{
@@ -30,32 +28,35 @@ struct ContentView: View {
                 QuoteCardView()
                     .padding(.horizontal, 50)
                     .padding(.bottom, 50)
+                    .onTapGesture(count: 2, perform: {
+                        likeQuote()
+                    })
                     
              
                 Button(action: {
                     withAnimation(.easeInOut){
-                        print("Likeeeeee Clicked")
+                        likeQuote()
                     }
                 }, label: {
-                    RoundButton(iconName: "hand.thumbsup", buttonSize: 100)
+                    RoundButton(iconName: quoteViewModel.isQuoteSaved ? "hand.thumbsup.fill" : "hand.thumbsup", buttonSize: 100)
                 })
                 
                 
                 HStack{
                     Button(action: {
                         withAnimation(.easeInOut){
-                            print("Back")
+                            getPrevQuote()
                         }
                     }, label: {
-                        RoundButton(iconName: "arrowshape.turn.up.backward.fill", buttonSize: 75)
+                        RoundButton(iconName: "arrowshape.turn.up.left", buttonSize: 75)
                     })
                     Spacer()
                     Button(action: {
                         withAnimation(.easeInOut){
-                            print("Next")
+                            loadQuote()
                         }
                     }, label: {
-                        RoundButton(iconName: "arrowshape.turn.up.right.fill", buttonSize: 75)
+                        RoundButton(iconName: "shuffle", buttonSize: 75)
                     })
                     
                 }
@@ -63,15 +64,27 @@ struct ContentView: View {
                 .padding(.bottom,20)
             }//VSTACK
             .frame(maxWidth: 550)
-        }
-        .background(Color("backgroundColor"))
+        }//ZSTACK
+        .onAppear(perform: loadQuote)
+    }
+    
+    private func loadQuote(){
+        quoteViewModel.getRandomQuote()
         
     }
-
+    
+    private func getPrevQuote(){
+        quoteViewModel.getPrevQuote()
+    }
+    
+    private func likeQuote(){
+        quoteViewModel.saveQuote()
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView().preferredColorScheme(.light).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+            .environmentObject(QuoteViewModel())
     }
 }

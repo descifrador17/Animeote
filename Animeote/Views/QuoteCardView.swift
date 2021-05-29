@@ -9,25 +9,22 @@ import SwiftUI
 
 struct QuoteCardView: View {
     
-    var animeName = "Naruto"
-    var animeQuote = "\"Lorem Ipsum this is very long quote but i dont care\""
-    var animeCharacter = "Kakashi"
+    @EnvironmentObject var quoteViewModel: QuoteViewModel
     
     var body: some View {
         VStack{
             Spacer()
             
-            
             HStack{
                 VStack(alignment:.leading,spacing: 10){
                     //Anime Name
-                    Text(animeName)
+                    Text(quoteViewModel.quote.anime)
                         .font(.subheadline)
                         .fontWeight(.semibold)
                         .foregroundColor(.gray)
                     
                     //Anime Quote
-                    Text(animeQuote)
+                    Text(quoteViewModel.quote.quote)
                         .font(.title2)
                         .italic()
                         .fontWeight(.medium)
@@ -43,7 +40,7 @@ struct QuoteCardView: View {
                     Spacer()
                     
                     //Anime Character Name
-                    Text("- \(animeCharacter)")
+                    Text("\(quoteViewModel.quote.character)")
                         .font(.system(size: 16, weight: .light, design: .default))
                 }//HSTACK
                 .padding(.horizontal, 16)
@@ -56,9 +53,6 @@ struct QuoteCardView: View {
         .cornerRadius(15)
         .shadow(color: lowerShadow, radius: 15, x: 10, y: 10)
         .shadow(color: upperShadow, radius: 15, x: -10, y: -10)
-        .onTapGesture(count: 2, perform: {
-            print("Hahahahhahahaha")
-        })
     }
 }
 
